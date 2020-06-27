@@ -10,7 +10,6 @@ class MP3Importer
     end
 
     def files
-        song_titles = []
         Dir['**/*.mp3'].collect {|file_names| file_names[/[^\/]*$/]}
     end
 
